@@ -96,10 +96,10 @@ vmap <Leader>cu :s!^//!!<CR>
 nmap <Leader>v :vsplit .<CR>
 nmap <Leader>l :split .<CR>
 " use them to swap between split windows
-nmap <left> <C-W>h
-nmap <right> <C-W>l
-nmap <up> <C-W>k
-nmap <down> <C-W>j
+"nmap <left> <C-W>h
+"nmap <right> <C-W>l
+"nmap <up> <C-W>k
+"nmap <down> <C-W>j
 "}}}
 
 " 新建tab  Ctrl+t
@@ -160,7 +160,6 @@ function! AutoSetFileHead()
         call setline(1, "\#!/usr/bin/env python")
         call append(1, "\# encoding: utf-8")
         call append(2, "\# File Name: ".expand("%"))
-        call append(3, "\# Author: Jiezhong Qiu")
         call append(4, "\# Create Time: " . strftime("%Y/%m/%d %H:%M"))
         call append(5, "\# TODO:")
     endif
@@ -192,5 +191,4 @@ func! CompileRun()
         exec "!time python %"
     endif
 endfunc
-
 

@@ -1,7 +1,7 @@
 set nocompatible
 set hidden
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -196,3 +196,4 @@ endif
 let g:easy_align_delimiters['#'] = { 'pattern': '#', 'ignore_groups': ['String'] }
 
 call vundle#end()
+
